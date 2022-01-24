@@ -5,6 +5,7 @@ const postSchema = mongoose.Schema({
  message: String,
  creator: String,
  tags: [String],
+ selectedFile: String,
  likeCount: {
      type: Number,
      default: 0
@@ -15,6 +16,6 @@ const postSchema = mongoose.Schema({
  },
 });
 
-const PostMEssage = mongoose.model('PostMessage', postSchema);
+const PostMessage = mongoose.model('PostMessage', postSchema);
 
-export default postMessage;
+export default PostMessage;
